@@ -32,13 +32,22 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-[#1E1E1E]">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TIPOGRAFIA-OFF%20WHITE-oFFBkv3T5t5fUcvoIs96rg4eO5lTrt.png"
-              alt="TCONNECTE Logo"
-              width={150}
-              height={40}
-              className="object-contain"
-            />
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault()
+                window.scrollTo({ top: 0, behavior: "smooth" })
+              }}
+              className="cursor-pointer"
+            >
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TIPOGRAFIA-OFF%20WHITE-oFFBkv3T5t5fUcvoIs96rg4eO5lTrt.png"
+                alt="TCONNECTE Logo"
+                width={150}
+                height={40}
+                className="object-contain"
+              />
+            </a>
           </div>
           <Link href="#plans" onClick={scrollToPlans}>
             <button className="bg-[#F3F3F3] text-[#1E1E1E] px-6 py-2 rounded font-['Poppins'] font-medium hover:bg-white transition-colors">
@@ -384,12 +393,12 @@ export default function Home() {
                 </ul>
 
                 <Button
-                  onClick={() => {
+                  onClick={() =>
                     window.open(
                       "https://api.whatsapp.com/send/?phone=351920357000&text=Ol%C3%A1%2C+tenho+interesse+no+Plano+Connecte+Performance%21+Gostaria+de+mais+informa%C3%A7%C3%B5es%2C+por+favor.&type=phone_number&app_absent=0",
                       "_blank",
                     )
-                  }}
+                  }
                   className="w-full bg-[#1E1E1E] text-white hover:bg-white hover:text-[#1E1E1E] hover:border hover:border-[#1E1E1E] rounded-md py-6 text-base font-medium transition-all"
                 >
                   Contratar Plano Performance
@@ -453,12 +462,12 @@ export default function Home() {
                 </ul>
 
                 <Button
-                  onClick={() => {
+                  onClick={() =>
                     window.open(
                       "https://api.whatsapp.com/send/?phone=351920357000&text=Ol%C3%A1%2C+tenho+interesse+no+Plano+Connecte+Start+Performance%21+Gostaria+de+mais+informa%C3%A7%C3%B5es%2C+por+favor.&type=phone_number&app_absent=0",
                       "_blank",
                     )
-                  }}
+                  }
                   className="w-full bg-[#F3F3F3] text-black hover:bg-black hover:text-[#F3F3F3] hover:border hover:border-[#F3F3F3] rounded-md py-6 text-base font-medium transition-all"
                 >
                   Contratar Plano Start Plus
@@ -650,11 +659,11 @@ export default function Home() {
               <div className="space-y-8 text-center">
                 <div>
                   <p className="font-['Geoform'] text-4xl font-bold text-[#1E1E1E]">+60</p>
-                  <p className="font-['Poppins'] text-lg text-[#1E1E1E]">Projetos gerenciados</p>
+                  <p className="font-['Poppins'] text-lg text-[#1E1E1E]">Projetos</p>
                 </div>
                 <div>
                   <p className="font-['Geoform'] text-4xl font-bold text-[#1E1E1E]">+5</p>
-                  <p className="font-['Poppins'] text-lg text-[#1E1E1E]">Países de atuação</p>
+                  <p className="font-['Poppins'] text-lg text-[#1E1E1E]">Países</p>
                 </div>
                 <div>
                   <p className="font-['Geoform'] text-4xl font-bold text-[#1E1E1E]">+€2M</p>
@@ -664,7 +673,7 @@ export default function Home() {
 
               {/* Coluna da direita - TCONNECTE e slogan */}
               <div className="text-center">
-                <h2 className="font-['Geoform'] text-5xl font-bold mb-4 text-[#1E1E1E]">TCONNECTE</h2>
+                <h2 className="font-['Geoform'] text-4xl font-bold mb-4 text-[#1E1E1E]">TCONNECTE</h2>
                 <p className="font-['Poppins'] text-base text-[#1E1E1E]">
                   Negócio ⌜Fortalece⌟ &nbsp;Estratégia ⌜Diversifica⌟ &nbsp;Resultado ⌜Escala ⌟
                 </p>
@@ -735,7 +744,7 @@ export default function Home() {
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1" className="border-b border-[#D7D7D7]">
                   <AccordionTrigger className="font-['Poppins'] font-medium text-[#1E1E1E] py-4">
-                    O que é o Connecte Tráfego?
+                    O que é o CONNECTE Tráfego?
                   </AccordionTrigger>
                   <AccordionContent className="font-['Poppins'] text-[#1E1E1E] pb-4">
                     É um sistema estratégico de mídia paga com metodologia própria (ARVE + CAO), focado em escalar
@@ -744,7 +753,7 @@ export default function Home() {
                 </AccordionItem>
                 <AccordionItem value="item-2" className="border-b border-[#D7D7D7]">
                   <AccordionTrigger className="font-['Poppins'] font-medium text-[#1E1E1E] py-4">
-                    A Tconnecte só roda anúncios?
+                    A TCONNECTE só roda anúncios?
                   </AccordionTrigger>
                   <AccordionContent className="font-['Poppins'] text-[#1E1E1E] pb-4">
                     Não. Antes de anunciar, fazemos diagnóstico, criamos o manifesto estratégico, estruturamos as
