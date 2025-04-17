@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import Script from "next/script"
+import { WhatsAppButton } from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
   title: "TCONNECTE | CONNECTE Tráfego | Tráfego Pago com Estratégia, Dados e Escala",
@@ -63,6 +64,7 @@ export default function RootLayout({
         </noscript>
         {/* End Google Tag Manager (noscript) */}
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   )
