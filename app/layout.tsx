@@ -27,6 +27,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "TCONNECTE", url: "https://tconnecte.com" }],
   creator: "TCONNECTE",
+  icons: {
+    icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png", sizes: "32x32" }],
+    apple: { url: "/apple-icon.png", type: "image/png", sizes: "180x180" },
+  },
 }
 
 export default function RootLayout({
