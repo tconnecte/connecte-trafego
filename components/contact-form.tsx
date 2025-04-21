@@ -51,7 +51,7 @@ export function ContactForm() {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button className="bg-[#F3F3F3] text-[#1E1E1E] border border-[#1E1E1E] hover:bg-white hover:border hover:border-[#1E1E1E] rounded-md px-8 py-5 text-base font-medium transition-all">
+        <Button className="bg-[#1E1E1E] text-[#F3F3F3] border border-[#1E1E1E] hover:bg-[#F3F3F3] hover:text-[#1E1E1E] hover:border hover:border-[#1E1E1E] rounded-md px-8 py-5 text-base font-medium transition-all">
           Agendar uma demonstração
         </Button>
       </DialogTrigger>

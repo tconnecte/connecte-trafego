@@ -87,7 +87,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-4 mt-6">
                   <Button
                     onClick={scrollToPlans}
-                    className="bg-[#1E1E1E] text-white hover:bg-white hover:text-[#1E1E1E] hover:border hover:border-[#1E1E1E] rounded-md px-8 py-5 text-base font-medium transition-all"
+                    className="bg-[#ED7E32] text-[#1E1E1E] hover:bg-white hover:text-[#ED7E32] hover:border hover:border-[#ED7E32] rounded-md px-8 py-5 text-base font-medium transition-all"
                   >
                     Conheça nossos planos
                   </Button>
